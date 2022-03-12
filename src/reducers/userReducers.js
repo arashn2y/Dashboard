@@ -17,7 +17,7 @@ export const userListReducer = (state = { data: [], ready: false}, action) => {
   }
 }
 
-export const userAddReducer = (state = { newList: [] }, action) => {
+export const userEditReducer = (state = { newList: [] }, action) => {
   switch (action.type) {
     case USER_ADD_REQUEST:
       return { loading: true, newList: [] }

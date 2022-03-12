@@ -44,7 +44,7 @@ export const addUser = (name, email, username = '-', city = '-', phone = '-', we
 
     const { data } = store.getState().userList
     const newUser = {
-      id: data[data.length - 1].id + 1,
+      id: data.length ? data[data.length - 1].id + 1 : 1,
       name,
       email,
       username,

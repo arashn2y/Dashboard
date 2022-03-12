@@ -25,7 +25,7 @@ const UserList = () => {
     } else {
       setList(data)
     }
-  }, [dispatch, ready])
+  }, [dispatch, ready, data.length])
 
   const showModal = id => {
     setShow(true)

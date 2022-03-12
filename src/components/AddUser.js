@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
-import { Form, Button, Row, Col } from "react-bootstrap"
+import { Container, Form, Button, Row, Col } from "react-bootstrap"
 import { addUser } from "../actions/useractions"
 
 const AddUser = () => {
@@ -28,7 +28,7 @@ const AddUser = () => {
     }
   }
   return (
-    <>
+    <Container fluid>
       <Row>
         <Col>Add new user</Col>
       </Row>
@@ -70,21 +70,21 @@ const AddUser = () => {
           </Form.Group>
           <Button
             type='submit'
-            variant='primary mt-5 rounded'
+            variant='info mt-5 rounded'
             className='position-absolute'
             style={{ right: "12px" }}>
             Add User
           </Button>
           <Button
             onClick={() => navigate("/")}
-            variant='danger mt-5 rounded'
+            variant='primary mt-5 rounded'
             className='position-absolute'
             style={{ right: "150px" }}>
             Cancel
           </Button>
         </Form>
       </Row>
-    </>
+    </Container>
   )
 }
 

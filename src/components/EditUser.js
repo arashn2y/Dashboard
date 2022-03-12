@@ -49,7 +49,6 @@ const EditUser = () => {
     city.length < 3 && setCityError(true)
     if (!regexMail.test(email)) {
       setEmailError(true)
-      return
     } if(!regexWebsite.test(website)) {
       setWebsiteError(true)
       return

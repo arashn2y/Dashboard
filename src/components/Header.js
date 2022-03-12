@@ -1,10 +1,11 @@
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom"
 
 const Header = ({ header }) => {
   return (
     <>
       <header>
-        <h1>{header}</h1>
+        <Link to='/' style={{textDecoration: 'none'}}><h1>{header}</h1></Link>
       </header>
       <hr />
     </>
