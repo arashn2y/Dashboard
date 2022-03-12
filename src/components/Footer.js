@@ -4,7 +4,9 @@ const Footer = props => {
   return (
     <Container>
       <Row>
-        <Col className='text-center py-3'>copyright &copy; Arash Nouri</Col>
+        <Col className='text-center py-3'>
+          copyright &copy; <a href='https://github.com/arashn2y' style={{textDecoration: 'none'}}>Arash Nouri</a>
+        </Col>
       </Row>
     </Container>
   )
