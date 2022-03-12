@@ -4,8 +4,7 @@ header {
 
 main {
   margin-top: 50px;
-  max-height: 90vh;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .table-sm th {
